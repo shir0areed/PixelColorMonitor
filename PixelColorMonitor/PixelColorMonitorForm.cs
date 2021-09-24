@@ -22,7 +22,9 @@ namespace PixelColorMonitor
         {
             if (e.Button == MouseButtons.Left)
             {
-                ColorBox.PickFromScreen(PickButton.PointToScreen(e.Location));
+                location = PickButton.PointToScreen(e.Location);
+                ColorBox.PickFromScreen(location);
+                LocationBox.Text = location.ToString();
             }
         }
 
@@ -30,5 +32,7 @@ namespace PixelColorMonitor
         {
 
         }
+
+        Point location = default;
     }
 }
