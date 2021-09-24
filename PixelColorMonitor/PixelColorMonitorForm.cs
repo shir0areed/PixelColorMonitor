@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PixelColorMonitor
 {
-    public partial class Form1 : Form
+    public partial class PixelColorMonitorForm : Form
     {
-        public Form1()
+        public PixelColorMonitorForm()
         {
             InitializeComponent();
         }

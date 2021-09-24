@@ -1,7 +1,7 @@
 ﻿
 namespace PixelColorMonitor
 {
-    partial class Form1
+    partial class PixelColorMonitorForm
     {
         /// <summary>
         /// 必要なデザイナー変数です。
