@@ -67,6 +67,11 @@ namespace PixelColorMonitor
             this.ColorBox.TabIndex = 1;
             this.ColorBox.TabStop = false;
             // 
+            // PickTimer
+            // 
+            this.PickTimer.Enabled = true;
+            this.PickTimer.Tick += new System.EventHandler(this.PickTimer_Tick);
+            // 
             // PixelColorMonitorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);

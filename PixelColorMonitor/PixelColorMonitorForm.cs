@@ -27,6 +27,11 @@ namespace PixelColorMonitor
             }
         }
 
+        private void PickTimer_Tick(object sender, EventArgs e)
+        {
+
+        }
+
         Point location = default;
     }
 }
