@@ -96,6 +96,7 @@ namespace PixelColorMonitor
             // 
             this.RGBBox.Location = new System.Drawing.Point(78, 59);
             this.RGBBox.Name = "RGBBox";
+            this.RGBBox.ReadOnly = true;
             this.RGBBox.Size = new System.Drawing.Size(267, 35);
             this.RGBBox.TabIndex = 5;
             // 
@@ -103,6 +104,7 @@ namespace PixelColorMonitor
             // 
             this.HSVBox.Location = new System.Drawing.Point(78, 100);
             this.HSVBox.Name = "HSVBox";
+            this.HSVBox.ReadOnly = true;
             this.HSVBox.Size = new System.Drawing.Size(267, 35);
             this.HSVBox.TabIndex = 6;
             // 
