@@ -18,6 +18,13 @@ namespace PixelColorMonitor
             InitializeComponent();
         }
 
+        public void PickFromScreen(Point location)
+        {
+            using (var g = Graphics.FromImage(Image))
+                g.CopyFromScreen(location, new Point(0, 0), Image.Size);
+            Invalidate();
+        }
+
         protected override void OnPaint(PaintEventArgs pe)
         {
             pe.Graphics.InterpolationMode = InterpolationMode.NearestNeighbor;

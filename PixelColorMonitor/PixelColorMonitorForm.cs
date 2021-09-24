@@ -22,9 +22,7 @@ namespace PixelColorMonitor
         {
             if (e.Button == MouseButtons.Left)
             {
-                using (var g = Graphics.FromImage(ColorBox.Image))
-                    g.CopyFromScreen(PickButton.PointToScreen(e.Location), new Point(0, 0), ColorBox.Image.Size);
-                ColorBox.Invalidate();
+                ColorBox.PickFromScreen(PickButton.PointToScreen(e.Location));
             }
         }
 
