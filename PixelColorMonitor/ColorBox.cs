@@ -18,7 +18,7 @@ namespace PixelColorMonitor
             InitializeComponent();
 
             if (!DesignMode)
-                Image = new Bitmap(1, 1);
+                Image = bitmap;
         }
 
         public void PickFromScreen(Point location)
@@ -35,5 +35,7 @@ namespace PixelColorMonitor
 
             base.OnPaint(pe);
         }
+
+        readonly Bitmap bitmap = new Bitmap(1, 1);
     }
 }
