@@ -112,7 +112,7 @@ namespace PixelColorMonitor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(357, 147);
             this.Controls.Add(this.HSVBox);
             this.Controls.Add(this.RGBBox);
             this.Controls.Add(this.RGBLabel);
