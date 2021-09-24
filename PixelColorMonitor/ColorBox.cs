@@ -25,6 +25,8 @@ namespace PixelColorMonitor
             Image = bitmap;
         }
 
+        public Color CurColor => bitmap.GetPixel(0, 0);
+
         protected override void OnPaint(PaintEventArgs pe)
         {
             pe.Graphics.InterpolationMode = InterpolationMode.NearestNeighbor;
@@ -32,7 +34,7 @@ namespace PixelColorMonitor
 
             base.OnPaint(pe);
         }
-
+        
         readonly Bitmap bitmap = new Bitmap(1, 1);
     }
 }
