@@ -34,6 +34,11 @@ namespace PixelColorMonitor
                 $"({CStringGenerator.GetColorString(c.R)}," +
                 $" {CStringGenerator.GetColorString(c.G)}," +
                 $" {CStringGenerator.GetColorString(c.B)})";
+            var hsv = CHSV.Calc(c);
+            HSVBox.Text =
+                $"({CStringGenerator.GetFloatString(hsv[0])}," +
+                $" {CStringGenerator.GetFloatString(hsv[1])}," +
+                $" {CStringGenerator.GetFloatString(hsv[2])})";
         }
     }
 
