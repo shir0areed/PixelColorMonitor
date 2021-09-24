@@ -24,14 +24,13 @@ namespace PixelColorMonitor
             if (e.Button == MouseButtons.Left)
             {
                 location = PickButton.PointToScreen(e.Location);
-                ColorBox.PickFromScreen(location);
                 LocationBox.Text = location.ToString();
             }
         }
 
         private void PickTimer_Tick(object sender, EventArgs e)
         {
-
+            ColorBox.PickFromScreen(location);
         }
     }
 }
