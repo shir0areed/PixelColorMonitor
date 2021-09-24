@@ -29,10 +29,12 @@ namespace PixelColorMonitor
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PixelColorMonitorForm));
             this.PickButton = new System.Windows.Forms.Button();
             this.LocationBox = new System.Windows.Forms.Label();
             this.ColorBox = new PixelColorMonitor.ColorBox();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,6 +90,7 @@ namespace PixelColorMonitor
         private System.Windows.Forms.Button PickButton;
         private PixelColorMonitor.ColorBox ColorBox;
         private System.Windows.Forms.Label LocationBox;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
