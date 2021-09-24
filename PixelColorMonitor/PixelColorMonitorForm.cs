@@ -15,7 +15,6 @@ namespace PixelColorMonitor
         public PixelColorMonitorForm()
         {
             InitializeComponent();
-            ColorBox.Image = new Bitmap(1, 1);
         }
 
         private void PickButton_MouseMove(object sender, MouseEventArgs e)

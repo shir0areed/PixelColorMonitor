@@ -16,6 +16,9 @@ namespace PixelColorMonitor
         public ColorBox()
         {
             InitializeComponent();
+
+            if (!DesignMode)
+                Image = new Bitmap(1, 1);
         }
 
         public void PickFromScreen(Point location)

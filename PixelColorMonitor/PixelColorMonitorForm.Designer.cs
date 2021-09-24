@@ -29,6 +29,7 @@ namespace PixelColorMonitor
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PixelColorMonitorForm));
             this.PickButton = new System.Windows.Forms.Button();
             this.LocationBox = new System.Windows.Forms.Label();
             this.ColorBox = new PixelColorMonitor.ColorBox();
@@ -57,6 +58,7 @@ namespace PixelColorMonitor
             // ColorBox
             // 
             this.ColorBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.ColorBox.Image = ((System.Drawing.Image)(resources.GetObject("ColorBox.Image")));
             this.ColorBox.Location = new System.Drawing.Point(99, 13);
             this.ColorBox.Name = "ColorBox";
             this.ColorBox.Size = new System.Drawing.Size(40, 40);
