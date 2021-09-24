@@ -45,7 +45,6 @@ namespace PixelColorMonitor
             this.PickButton.Text = "取得";
             this.PickButton.UseVisualStyleBackColor = true;
             this.PickButton.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PickButton_MouseMove);
-            this.PickButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PickButton_MouseUp);
             // 
             // LocationBox
             // 

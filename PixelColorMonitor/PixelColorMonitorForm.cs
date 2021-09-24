@@ -27,11 +27,6 @@ namespace PixelColorMonitor
             }
         }
 
-        private void PickButton_MouseUp(object sender, MouseEventArgs e)
-        {
-
-        }
-
         Point location = default;
     }
 }
