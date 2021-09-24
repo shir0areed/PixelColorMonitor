@@ -37,8 +37,8 @@ namespace PixelColorMonitor
             this.PickTimer = new System.Windows.Forms.Timer(this.components);
             this.HSVLabel = new System.Windows.Forms.Label();
             this.RGBLabel = new System.Windows.Forms.Label();
-            this.RGBBox = new System.Windows.Forms.TextBox();
-            this.HSVBox = new System.Windows.Forms.TextBox();
+            this.RGBBox = new PixelColorMonitor.CopiableTextBox();
+            this.HSVBox = new PixelColorMonitor.CopiableTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -139,8 +139,8 @@ namespace PixelColorMonitor
         private System.Windows.Forms.Timer PickTimer;
         private System.Windows.Forms.Label HSVLabel;
         private System.Windows.Forms.Label RGBLabel;
-        private System.Windows.Forms.TextBox RGBBox;
-        private System.Windows.Forms.TextBox HSVBox;
+        private PixelColorMonitor.CopiableTextBox RGBBox;
+        private PixelColorMonitor.CopiableTextBox HSVBox;
     }
 }
 
