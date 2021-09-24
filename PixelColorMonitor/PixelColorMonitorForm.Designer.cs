@@ -29,24 +29,24 @@ namespace PixelColorMonitor
         /// </summary>
         private void InitializeComponent()
         {
-            this.button1 = new System.Windows.Forms.Button();
+            this.PickButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // button1
+            // PickButton
             // 
-            this.button1.Location = new System.Drawing.Point(13, 13);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(80, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "取得";
-            this.button1.UseVisualStyleBackColor = true;
+            this.PickButton.Location = new System.Drawing.Point(13, 13);
+            this.PickButton.Name = "PickButton";
+            this.PickButton.Size = new System.Drawing.Size(80, 40);
+            this.PickButton.TabIndex = 0;
+            this.PickButton.Text = "取得";
+            this.PickButton.UseVisualStyleBackColor = true;
             // 
             // PixelColorMonitorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.PickButton);
             this.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
@@ -58,7 +58,7 @@ namespace PixelColorMonitor
 
         #endregion
 
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button PickButton;
     }
 }
 
