@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace PixelColorMonitor
 {
-    public partial class ColorBox : Control
+    public partial class ColorBox : PictureBox
     {
         public ColorBox()
         {
