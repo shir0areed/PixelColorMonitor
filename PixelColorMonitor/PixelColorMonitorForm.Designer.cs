@@ -35,6 +35,10 @@ namespace PixelColorMonitor
             this.LocationBox = new System.Windows.Forms.Label();
             this.ColorBox = new PixelColorMonitor.ColorBox();
             this.PickTimer = new System.Windows.Forms.Timer(this.components);
+            this.HSVLabel = new System.Windows.Forms.Label();
+            this.RGBLabel = new System.Windows.Forms.Label();
+            this.RGBBox = new System.Windows.Forms.TextBox();
+            this.HSVBox = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -72,11 +76,45 @@ namespace PixelColorMonitor
             this.PickTimer.Enabled = true;
             this.PickTimer.Tick += new System.EventHandler(this.PickTimer_Tick);
             // 
+            // HSVLabel
+            // 
+            this.HSVLabel.Location = new System.Drawing.Point(12, 103);
+            this.HSVLabel.Name = "HSVLabel";
+            this.HSVLabel.Size = new System.Drawing.Size(60, 30);
+            this.HSVLabel.TabIndex = 3;
+            this.HSVLabel.Text = "HSV";
+            // 
+            // RGBLabel
+            // 
+            this.RGBLabel.Location = new System.Drawing.Point(12, 62);
+            this.RGBLabel.Name = "RGBLabel";
+            this.RGBLabel.Size = new System.Drawing.Size(60, 30);
+            this.RGBLabel.TabIndex = 4;
+            this.RGBLabel.Text = "RGB";
+            // 
+            // RGBBox
+            // 
+            this.RGBBox.Location = new System.Drawing.Point(78, 59);
+            this.RGBBox.Name = "RGBBox";
+            this.RGBBox.Size = new System.Drawing.Size(267, 35);
+            this.RGBBox.TabIndex = 5;
+            // 
+            // HSVBox
+            // 
+            this.HSVBox.Location = new System.Drawing.Point(78, 100);
+            this.HSVBox.Name = "HSVBox";
+            this.HSVBox.Size = new System.Drawing.Size(267, 35);
+            this.HSVBox.TabIndex = 6;
+            // 
             // PixelColorMonitorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.HSVBox);
+            this.Controls.Add(this.RGBBox);
+            this.Controls.Add(this.RGBLabel);
+            this.Controls.Add(this.HSVLabel);
             this.Controls.Add(this.LocationBox);
             this.Controls.Add(this.ColorBox);
             this.Controls.Add(this.PickButton);
@@ -87,6 +125,7 @@ namespace PixelColorMonitor
             this.Text = "PixelColorMonitor";
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -96,6 +135,10 @@ namespace PixelColorMonitor
         private PixelColorMonitor.ColorBox ColorBox;
         private System.Windows.Forms.Label LocationBox;
         private System.Windows.Forms.Timer PickTimer;
+        private System.Windows.Forms.Label HSVLabel;
+        private System.Windows.Forms.Label RGBLabel;
+        private System.Windows.Forms.TextBox RGBBox;
+        private System.Windows.Forms.TextBox HSVBox;
     }
 }
 
