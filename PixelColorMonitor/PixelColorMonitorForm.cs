@@ -29,6 +29,19 @@ namespace PixelColorMonitor
         {
             ColorBox.PickFromScreen(location);
             LocationBox.Text = location.ToString();
+            var c = ColorBox.CurColor;
+            RGBBox.Text =
+                $"({CStringGenerator.GetColorString(c.R)}," +
+                $" {CStringGenerator.GetColorString(c.G)}," +
+                $" {CStringGenerator.GetColorString(c.B)})";
+        }
+    }
+
+    static class CStringGenerator
+    {
+        public static string GetColorString(byte val)
+        {
+            return $"{val / 255.0f:F3}f";
         }
     }
 }
