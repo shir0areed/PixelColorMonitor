@@ -16,5 +16,15 @@ namespace PixelColorMonitor
         {
             InitializeComponent();
         }
+
+        private void PickButton_MouseMove(object sender, MouseEventArgs e)
+        {
+
+        }
+
+        private void PickButton_MouseUp(object sender, MouseEventArgs e)
+        {
+
+        }
     }
 }
