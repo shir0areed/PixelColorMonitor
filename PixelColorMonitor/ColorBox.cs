@@ -16,16 +16,13 @@ namespace PixelColorMonitor
         public ColorBox()
         {
             InitializeComponent();
-
-            if (!DesignMode)
-                Image = bitmap;
         }
 
         public void PickFromScreen(Point location)
         {
-            using (var g = Graphics.FromImage(Image))
+            using (var g = Graphics.FromImage(bitmap))
                 g.CopyFromScreen(location, new Point(0, 0), Image.Size);
-            Invalidate();
+            Image = bitmap;
         }
 
         protected override void OnPaint(PaintEventArgs pe)
