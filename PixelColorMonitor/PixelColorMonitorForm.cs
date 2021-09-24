@@ -41,7 +41,12 @@ namespace PixelColorMonitor
     {
         public static string GetColorString(byte val)
         {
-            return $"{val / 255.0f:F3}f";
+            return GetFloatString(val / 255.0f);
+        }
+
+        public static string GetFloatString(float val)
+        {
+            return $"{val:F3}f";
         }
     }
 }
