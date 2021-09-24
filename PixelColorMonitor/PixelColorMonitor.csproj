@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ColorBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="ColorBox.Designer.cs">
+      <DependentUpon>ColorBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="PixelColorMonitorForm.cs">
       <SubType>Form</SubType>
     </Compile>
