@@ -10,11 +10,13 @@ using System.Windows.Forms;
 
 namespace PixelColorMonitor
 {
-    public partial class CopiableTextBox : Control
+    public partial class CopiableTextBox : TextBox
     {
         public CopiableTextBox()
         {
             InitializeComponent();
+
+            ReadOnly = true;
         }
 
         protected override void OnPaint(PaintEventArgs pe)
