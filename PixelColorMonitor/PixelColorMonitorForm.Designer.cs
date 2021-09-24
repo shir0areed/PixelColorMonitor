@@ -30,7 +30,7 @@ namespace PixelColorMonitor
         private void InitializeComponent()
         {
             this.PickButton = new System.Windows.Forms.Button();
-            this.ColorBox = new System.Windows.Forms.PictureBox();
+            this.ColorBox = new PixelColorMonitor.ColorBox();
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -75,7 +75,7 @@ namespace PixelColorMonitor
         #endregion
 
         private System.Windows.Forms.Button PickButton;
-        private System.Windows.Forms.PictureBox ColorBox;
+        private PixelColorMonitor.ColorBox ColorBox;
     }
 }
 
