@@ -52,7 +52,7 @@
     <Compile Include="PixelColorMonitorForm.Designer.cs">
       <DependentUpon>PixelColorMonitorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Program.cs" />
+    <Compile Include="PixelColorMonitor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="PixelColorMonitorForm.resx">
       <DependentUpon>PixelColorMonitorForm.cs</DependentUpon>
