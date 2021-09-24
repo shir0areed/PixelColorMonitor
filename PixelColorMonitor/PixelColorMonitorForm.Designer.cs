@@ -30,8 +30,8 @@ namespace PixelColorMonitor
         private void InitializeComponent()
         {
             this.PickButton = new System.Windows.Forms.Button();
-            this.ColorBox = new PixelColorMonitor.ColorBox();
             this.label1 = new System.Windows.Forms.Label();
+            this.ColorBox = new PixelColorMonitor.ColorBox();
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,6 +46,14 @@ namespace PixelColorMonitor
             this.PickButton.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PickButton_MouseMove);
             this.PickButton.MouseUp += new System.Windows.Forms.MouseEventHandler(this.PickButton_MouseUp);
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(145, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(200, 30);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "{X=XXXX,Y=XXXX}";
+            // 
             // ColorBox
             // 
             this.ColorBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
@@ -55,15 +63,6 @@ namespace PixelColorMonitor
             this.ColorBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ColorBox.TabIndex = 1;
             this.ColorBox.TabStop = false;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(145, 18);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(68, 30);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "label1";
             // 
             // PixelColorMonitorForm
             // 
@@ -80,7 +79,6 @@ namespace PixelColorMonitor
             this.Text = "PixelColorMonitor";
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
