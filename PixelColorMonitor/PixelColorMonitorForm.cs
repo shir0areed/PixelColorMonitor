@@ -17,6 +17,8 @@ namespace PixelColorMonitor
             InitializeComponent();
         }
 
+        Point location = default;
+
         private void PickButton_MouseMove(object sender, MouseEventArgs e)
         {
             if (e.Button == MouseButtons.Left)
@@ -31,7 +33,5 @@ namespace PixelColorMonitor
         {
 
         }
-
-        Point location = default;
     }
 }
