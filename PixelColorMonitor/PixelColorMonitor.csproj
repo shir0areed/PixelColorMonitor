@@ -52,6 +52,12 @@
     <Compile Include="ColorBox.Designer.cs">
       <DependentUpon>ColorBox.cs</DependentUpon>
     </Compile>
+    <Compile Include="CopiableTextBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="CopiableTextBox.Designer.cs">
+      <DependentUpon>CopiableTextBox.cs</DependentUpon>
+    </Compile>
     <Compile Include="HSV.cs" />
     <Compile Include="PixelColorMonitorForm.cs">
       <SubType>Form</SubType>
