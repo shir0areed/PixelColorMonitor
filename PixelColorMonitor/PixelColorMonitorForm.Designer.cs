@@ -31,6 +31,7 @@ namespace PixelColorMonitor
         {
             this.PickButton = new System.Windows.Forms.Button();
             this.ColorBox = new PixelColorMonitor.ColorBox();
+            this.label1 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,11 +56,21 @@ namespace PixelColorMonitor
             this.ColorBox.TabIndex = 1;
             this.ColorBox.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(145, 18);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(68, 30);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "label1";
+            // 
             // PixelColorMonitorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ColorBox);
             this.Controls.Add(this.PickButton);
             this.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -69,6 +80,7 @@ namespace PixelColorMonitor
             this.Text = "PixelColorMonitor";
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -76,6 +88,7 @@ namespace PixelColorMonitor
 
         private System.Windows.Forms.Button PickButton;
         private PixelColorMonitor.ColorBox ColorBox;
+        private System.Windows.Forms.Label label1;
     }
 }
 
