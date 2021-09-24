@@ -18,5 +18,11 @@ namespace PixelColorMonitor
 
             ReadOnly = true;
         }
+        
+        protected override void OnClick(EventArgs e)
+        {
+            SelectAll();
+            base.OnClick(e);
+        }
     }
 }
