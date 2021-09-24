@@ -51,6 +51,7 @@ namespace PixelColorMonitor
             this.ColorBox.Location = new System.Drawing.Point(99, 13);
             this.ColorBox.Name = "ColorBox";
             this.ColorBox.Size = new System.Drawing.Size(40, 40);
+            this.ColorBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.ColorBox.TabIndex = 1;
             this.ColorBox.TabStop = false;
             // 

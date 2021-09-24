@@ -15,11 +15,17 @@ namespace PixelColorMonitor
         public PixelColorMonitorForm()
         {
             InitializeComponent();
+            ColorBox.Image = new Bitmap(ColorBox.Width, ColorBox.Height);
         }
 
         private void PickButton_MouseMove(object sender, MouseEventArgs e)
         {
-
+            if (e.Button == MouseButtons.Left)
+            {
+                using (var g = Graphics.FromImage(ColorBox.Image))
+                    g.CopyFromScreen(PickButton.PointToScreen(e.Location), new Point(0, 0), ColorBox.Image.Size);
+                ColorBox.Invalidate();
+            }
         }
 
         private void PickButton_MouseUp(object sender, MouseEventArgs e)
