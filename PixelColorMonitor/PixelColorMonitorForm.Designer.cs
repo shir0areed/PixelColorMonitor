@@ -39,7 +39,10 @@ namespace PixelColorMonitor
             this.HSVBox = new PixelColorMonitor.CopiableTextBox();
             this.RGBBox = new PixelColorMonitor.CopiableTextBox();
             this.ColorBox = new PixelColorMonitor.ColorBox();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.LocationLabel = new System.Windows.Forms.ToolStripStatusLabel();
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).BeginInit();
+            this.statusStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // PickButton
@@ -108,11 +111,28 @@ namespace PixelColorMonitor
             this.ColorBox.TabIndex = 1;
             this.ColorBox.TabStop = false;
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LocationLabel});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 138);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(357, 22);
+            this.statusStrip1.TabIndex = 7;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // LocationLabel
+            // 
+            this.LocationLabel.Name = "LocationLabel";
+            this.LocationLabel.Size = new System.Drawing.Size(118, 17);
+            this.LocationLabel.Text = "toolStripStatusLabel1";
+            // 
             // PixelColorMonitorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(357, 147);
+            this.ClientSize = new System.Drawing.Size(357, 160);
+            this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.HSVBox);
             this.Controls.Add(this.RGBBox);
             this.Controls.Add(this.RGBLabel);
@@ -127,6 +147,8 @@ namespace PixelColorMonitor
             this.Text = "PixelColorMonitor";
             this.TopMost = true;
             ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).EndInit();
+            this.statusStrip1.ResumeLayout(false);
+            this.statusStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -142,6 +164,8 @@ namespace PixelColorMonitor
         private System.Windows.Forms.Label RGBLabel;
         private PixelColorMonitor.CopiableTextBox RGBBox;
         private PixelColorMonitor.CopiableTextBox HSVBox;
+        private System.Windows.Forms.StatusStrip statusStrip1;
+        private System.Windows.Forms.ToolStripStatusLabel LocationLabel;
     }
 }
 
