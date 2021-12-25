@@ -28,7 +28,6 @@ namespace PixelColorMonitor
         private void PickTimer_Tick(object sender, EventArgs e)
         {
             ColorBox.PickFromScreen(location);
-            LocationBox.Text = location.ToString();
             LocationLabel.Text = location.ToString();
             var c = ColorBox.CurColor;
             RGBBox.Text =

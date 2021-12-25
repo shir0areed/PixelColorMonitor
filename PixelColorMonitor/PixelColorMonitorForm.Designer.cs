@@ -32,7 +32,6 @@ namespace PixelColorMonitor
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PixelColorMonitorForm));
             this.PickButton = new System.Windows.Forms.Button();
-            this.LocationBox = new System.Windows.Forms.Label();
             this.PickTimer = new System.Windows.Forms.Timer(this.components);
             this.HSVLabel = new System.Windows.Forms.Label();
             this.RGBLabel = new System.Windows.Forms.Label();
@@ -54,14 +53,6 @@ namespace PixelColorMonitor
             this.PickButton.Text = "取得";
             this.PickButton.UseVisualStyleBackColor = true;
             this.PickButton.MouseMove += new System.Windows.Forms.MouseEventHandler(this.PickButton_MouseMove);
-            // 
-            // LocationBox
-            // 
-            this.LocationBox.Location = new System.Drawing.Point(145, 18);
-            this.LocationBox.Name = "LocationBox";
-            this.LocationBox.Size = new System.Drawing.Size(200, 30);
-            this.LocationBox.TabIndex = 2;
-            this.LocationBox.Text = "{X=XXXX,Y=XXXX}";
             // 
             // PickTimer
             // 
@@ -137,7 +128,6 @@ namespace PixelColorMonitor
             this.Controls.Add(this.RGBBox);
             this.Controls.Add(this.RGBLabel);
             this.Controls.Add(this.HSVLabel);
-            this.Controls.Add(this.LocationBox);
             this.Controls.Add(this.ColorBox);
             this.Controls.Add(this.PickButton);
             this.Font = new System.Drawing.Font("Yu Gothic UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
@@ -158,7 +148,6 @@ namespace PixelColorMonitor
 
         private System.Windows.Forms.Button PickButton;
         private PixelColorMonitor.ColorBox ColorBox;
-        private System.Windows.Forms.Label LocationBox;
         private System.Windows.Forms.Timer PickTimer;
         private System.Windows.Forms.Label HSVLabel;
         private System.Windows.Forms.Label RGBLabel;
