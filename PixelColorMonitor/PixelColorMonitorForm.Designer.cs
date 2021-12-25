@@ -35,13 +35,15 @@ namespace PixelColorMonitor
             this.PickTimer = new System.Windows.Forms.Timer(this.components);
             this.HSVLabel = new System.Windows.Forms.Label();
             this.RGBLabel = new System.Windows.Forms.Label();
+            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
+            this.LocationLabel = new System.Windows.Forms.ToolStripStatusLabel();
             this.HSVBox = new PixelColorMonitor.CopiableTextBox();
             this.RGBBox = new PixelColorMonitor.CopiableTextBox();
             this.ColorBox = new PixelColorMonitor.ColorBox();
-            this.statusStrip1 = new System.Windows.Forms.StatusStrip();
-            this.LocationLabel = new System.Windows.Forms.ToolStripStatusLabel();
-            ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).BeginInit();
+            this.FloatButton = new System.Windows.Forms.RadioButton();
+            this.IntButton = new System.Windows.Forms.RadioButton();
             this.statusStrip1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).BeginInit();
             this.SuspendLayout();
             // 
             // PickButton
@@ -75,6 +77,22 @@ namespace PixelColorMonitor
             this.RGBLabel.TabIndex = 4;
             this.RGBLabel.Text = "RGB";
             // 
+            // statusStrip1
+            // 
+            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.LocationLabel});
+            this.statusStrip1.Location = new System.Drawing.Point(0, 138);
+            this.statusStrip1.Name = "statusStrip1";
+            this.statusStrip1.Size = new System.Drawing.Size(357, 22);
+            this.statusStrip1.TabIndex = 7;
+            this.statusStrip1.Text = "statusStrip1";
+            // 
+            // LocationLabel
+            // 
+            this.LocationLabel.Name = "LocationLabel";
+            this.LocationLabel.Size = new System.Drawing.Size(118, 17);
+            this.LocationLabel.Text = "toolStripStatusLabel1";
+            // 
             // HSVBox
             // 
             this.HSVBox.Location = new System.Drawing.Point(78, 100);
@@ -102,27 +120,35 @@ namespace PixelColorMonitor
             this.ColorBox.TabIndex = 1;
             this.ColorBox.TabStop = false;
             // 
-            // statusStrip1
+            // FloatButton
             // 
-            this.statusStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.LocationLabel});
-            this.statusStrip1.Location = new System.Drawing.Point(0, 138);
-            this.statusStrip1.Name = "statusStrip1";
-            this.statusStrip1.Size = new System.Drawing.Size(357, 22);
-            this.statusStrip1.TabIndex = 7;
-            this.statusStrip1.Text = "statusStrip1";
+            this.FloatButton.AutoSize = true;
+            this.FloatButton.Checked = true;
+            this.FloatButton.Location = new System.Drawing.Point(210, 16);
+            this.FloatButton.Name = "FloatButton";
+            this.FloatButton.Size = new System.Drawing.Size(74, 34);
+            this.FloatButton.TabIndex = 8;
+            this.FloatButton.TabStop = true;
+            this.FloatButton.Text = "float";
+            this.FloatButton.UseVisualStyleBackColor = true;
             // 
-            // LocationLabel
+            // IntButton
             // 
-            this.LocationLabel.Name = "LocationLabel";
-            this.LocationLabel.Size = new System.Drawing.Size(118, 17);
-            this.LocationLabel.Text = "toolStripStatusLabel1";
+            this.IntButton.AutoSize = true;
+            this.IntButton.Location = new System.Drawing.Point(290, 16);
+            this.IntButton.Name = "IntButton";
+            this.IntButton.Size = new System.Drawing.Size(55, 34);
+            this.IntButton.TabIndex = 9;
+            this.IntButton.Text = "int";
+            this.IntButton.UseVisualStyleBackColor = true;
             // 
             // PixelColorMonitorForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(357, 160);
+            this.Controls.Add(this.FloatButton);
+            this.Controls.Add(this.IntButton);
             this.Controls.Add(this.statusStrip1);
             this.Controls.Add(this.HSVBox);
             this.Controls.Add(this.RGBBox);
@@ -136,9 +162,9 @@ namespace PixelColorMonitor
             this.Name = "PixelColorMonitorForm";
             this.Text = "PixelColorMonitor";
             this.TopMost = true;
-            ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).EndInit();
             this.statusStrip1.ResumeLayout(false);
             this.statusStrip1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.ColorBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -155,6 +181,8 @@ namespace PixelColorMonitor
         private PixelColorMonitor.CopiableTextBox HSVBox;
         private System.Windows.Forms.StatusStrip statusStrip1;
         private System.Windows.Forms.ToolStripStatusLabel LocationLabel;
+        private System.Windows.Forms.RadioButton FloatButton;
+        private System.Windows.Forms.RadioButton IntButton;
     }
 }
 
