@@ -31,9 +31,9 @@ namespace PixelColorMonitor
             LocationLabel.Text = location.ToString();
             var c = ColorBox.CurColor;
             RGBBox.Text =
-                $"({CStringGenerator.GetColorString(c.R)}," +
-                $" {CStringGenerator.GetColorString(c.G)}," +
-                $" {CStringGenerator.GetColorString(c.B)})";
+                $"({CStringGenerator.GetFloatString(c.R)}," +
+                $" {CStringGenerator.GetFloatString(c.G)}," +
+                $" {CStringGenerator.GetFloatString(c.B)})";
             var hsv = CHSV.Calc(c);
             HSVBox.Text =
                 $"({CStringGenerator.GetFloatString(hsv[0])}," +
@@ -44,7 +44,7 @@ namespace PixelColorMonitor
 
     static class CStringGenerator
     {
-        public static string GetColorString(byte val)
+        public static string GetFloatString(byte val)
         {
             return GetFloatString(val / 255.0f);
         }
