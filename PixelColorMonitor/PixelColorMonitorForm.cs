@@ -29,29 +29,30 @@ namespace PixelColorMonitor
         {
             ColorBox.PickFromScreen(location);
             LocationLabel.Text = location.ToString();
+            var f = FloatButton.Checked;
             var c = ColorBox.CurColor;
             RGBBox.Text =
-                $"({CStringGenerator.GetString(c.R)}," +
-                $" {CStringGenerator.GetString(c.G)}," +
-                $" {CStringGenerator.GetString(c.B)})";
+                $"({CStringGenerator.GetString(c.R, f)}," +
+                $" {CStringGenerator.GetString(c.G, f)}," +
+                $" {CStringGenerator.GetString(c.B, f)})";
             var hsv = CHSV.Calc(c);
             HSVBox.Text =
-                $"({CStringGenerator.GetString(hsv[0])}," +
-                $" {CStringGenerator.GetString(hsv[1])}," +
-                $" {CStringGenerator.GetString(hsv[2])})";
+                $"({CStringGenerator.GetString(hsv[0], f)}," +
+                $" {CStringGenerator.GetString(hsv[1], f)}," +
+                $" {CStringGenerator.GetString(hsv[2], f)})";
         }
     }
 
     static class CStringGenerator
     {
-        public static string GetString(byte val)
+        public static string GetString(byte val, bool f)
         {
-            return GetFloatString(val);
+            return f ? GetFloatString(val) : GetIntString(val);
         }
 
-        public static string GetString(float val)
+        public static string GetString(float val, bool f)
         {
-            return GetFloatString(val);
+            return f ? GetFloatString(val) : GetIntString(val);
         }
 
         private static string GetFloatString(byte val)
@@ -62,6 +63,16 @@ namespace PixelColorMonitor
         private static string GetFloatString(float val)
         {
             return $"{val:F3}f";
+        }
+
+        private static string GetIntString(byte val)
+        {
+            return val.ToString();
+        }
+
+        private static string GetIntString(float val)
+        {
+            return GetIntString((byte)Math.Floor(val * 255.0f));
         }
     }
 }
